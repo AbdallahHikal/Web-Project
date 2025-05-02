@@ -1,0 +1,48 @@
+CREATE DATABASE emp_management;
+
+------------------------------------------
+
+CREATE TABLE employee (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    salary DECIMAL(10, 2),
+    dates VARCHAR(20),
+    password VARCHAR(255),
+    email VARCHAR(100) UNIQUE,
+    department VARCHAR(100),
+    types  INT 
+);
+
+
+---------------------------------------------
+
+CREATE TABLE attendance (
+    ID INT PRIMARY KEY,
+    attendance_rate VARCHAR(10),
+    days_present INT,
+    days_absent INT,
+    total_days INT,
+    FOREIGN KEY (ID) REFERENCES employee(ID) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+--------------------------------------------
+
+INSERT INTO employee (name, salary, dates, password, email, department, types) VALUES
+('Alice Johnson', 4200.50, '2021-05-15', '123', 'admin1@example.com', 'HR', 0),
+('Bob Smith', 5200.00, '2020-08-22', '111', 'admin2@example.com', 'Finance', 1),
+('Carol Davis', 4800.75, '2019-11-01', '222', 'admin3@example.com', 'IT', 0),
+('David Brown', 5300.25, '2022-01-10', 'd123', 'david@example.com', 'Marketing', 1),
+('Eve Wilson', 4600.00, '2018-07-18', 'e123', 'eve@example.com', 'Operations', 0),
+('Frank Taylor', 5500.90, '2023-03-05', 'f123', 'frank@example.com', 'Sales', 1);
+
+---------------------------------------------
+
+INSERT INTO attendance (ID, attendance_rate, days_present, days_absent, total_days) VALUES
+(1, '95%', 19, 1, 20),
+(2, '88.5%', 177, 23, 200),
+(3, '92%', 184, 16, 200),
+(4, '100%', 5, 0, 5),
+(5, '90%', 180, 20, 200),
+(6, '97.5%', 195, 5, 200);
+
+
