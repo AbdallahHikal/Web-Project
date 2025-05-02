@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: url('../image/ELT-Contract-Solutions-header2-01.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    color: #e4e4e4;;
+    width: 420px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 25px 45px plum;
+}
+
+.header h1 {
+    margin-bottom: 30px;
+    color: #e4e4e4;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 1.05em;
+    color: #e4e4e4;
+    font-weight: 500;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: top 0.3s ease, font-size 0.3s ease;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+    top: -10px;
+    font-size: 0.85em;
+    color: #e4e4e4;;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+    color: #e4e4e4;
+}
+
+.form-group input:focus {
+    border-color: plum;
+    box-shadow: 0 0 5px rgba(148, 121, 213, 0.5);
+}
+
+.confirmation-message {
+    font-size: 1em;
+    font-weight: 500;
+    color: plum;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    border: none;
+    padding: 12px 0;
+    width: 45%;
+    color:  #e4e4e4;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.delete-btn {
+    background-color:purple;
+}
+
+.delete-btn:hover {
+    background-color: #472974;
+}
+
+.cancel-btn {
+    background-color:purple;
+}
+
+.cancel-btn:hover {
+    background-color: #472974;
+}

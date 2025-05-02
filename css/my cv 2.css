@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background:  url('../image/ELT-Contract-Solutions-header2-01.png') no-repeat center center fixed;;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #343a40;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header {
+    background: linear-gradient(135deg, purple,plum);
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 25px 45px plum;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.logo i {
+    font-size: 1.8rem;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    padding: 2rem;
+    gap: 2rem;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 25px 45px plum;
+}
+
+.sidebar {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.sidebar-title i {
+    color: plum;
+}
+
+#uploadForm {
+    margin-bottom: 2rem;
+}
+
+.file-input {
+    display: none;
+}
+
+.upload-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.upload-card:hover {
+    border-color: plum;
+    background-color: rgba(58, 123, 213, 0.05);
+}
+
+.upload-icon {
+    font-size: 2.5rem;
+    color:plum;
+    margin-bottom: 1rem;
+}
+
+.upload-text {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.upload-subtext {
+    color: #e4e4e4;
+    font-size: 0.9rem;
+}
+
+.btn {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn i {
+    font-size: 0.9rem;
+}
+
+.btn-view {
+    background-color: #c15aac;
+    color: white;
+}
+
+.btn-view:hover {
+    background-color: #8a226d;
+}
+
+.btn-delete {
+    background-color: #9b2e85;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #652c5f;
+}
+
+.cv-list-container {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cv-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cv-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.cv-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cv-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cv-icon {
+    font-size: 1.8rem;
+    color: plum;
+}
+
+.cv-icon.fa-file-word {
+    color: purple;
+}
+
+.cv-name {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.cv-meta {
+    color: #e4e4e4;
+    font-size: 0.85rem;
+}
+
+.cv-actions {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: purple;
+    color: #e4e4e4;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    border: 2px solid purple;
+}
+
+.cta-button:hover {
+    background: #472974;
+    border: 2px solid #472974;
+    color: #e4e4e4;
+}
+
+#customAlert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .alert-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .alert-box button {
+    background: purple;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  
+  .alert-box.success {
+    border-top: 5px solid green;
+  }
+  
+  .alert-box.error {
+    border-top: 5px solid red;
+  }
+  
+  .alert-box.warning {
+    border-top: 5px solid orange;
+  }
