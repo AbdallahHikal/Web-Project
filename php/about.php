@@ -36,7 +36,7 @@
             </p>
             
             <center>
-                <a href="choose user.php" class="cta-button">Cancel </a>
+                <a href="../index.php" class="cta-button">Cancel </a>
             </center>
             
         </section>
