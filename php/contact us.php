@@ -114,7 +114,7 @@
             </div><br>
             <br>
            <center> <div class="btn-group">
-                <button type="submit" class="btn" onclick="window.location.href='choose user.php'">
+                <button type="submit" class="btn" onclick="window.location.href='../index.php'">
                      cancel
                 </button>
             </div>
