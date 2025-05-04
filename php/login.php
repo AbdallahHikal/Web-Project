@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="choose user.php">Home</a>
+            <a href="../index.php">Home</a>
             <a href="about.php">About</a>
         </nav>
 
